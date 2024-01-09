@@ -1,4 +1,4 @@
-export const API = "https://be-cart-test-production.up.railway.app/";
+export const API = "https://be-cart-test-production.up.railway.app";
 
 export const API_SHOES = `${API}/shoes`;
 
