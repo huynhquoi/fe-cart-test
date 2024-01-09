@@ -1,4 +1,17 @@
 ::-webkit-scrollbar {
-    width: 0;
-  }
-  
+  width: 0;
+}
+
+.shoes-page::before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translateX(-50%) skewY(-8deg);
+  background-color: #f6c90e;
+  z-index: -1;
+}

@@ -56,7 +56,7 @@ const ShoesPage = () => {
     <>
       <div
         style={{ height: "100vh", width: "100vw" }}
-        className="flex items-center justify-center"
+        className="flex items-center justify-center shoes-page"
       >
         <CardWrapper title="Ours Products">
           <ScrollArea className="h-full w-full overflow-y-scroll scroll-area">
