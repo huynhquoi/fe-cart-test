@@ -79,7 +79,7 @@ const ShoesPage = () => {
         >
           <ScrollArea className="h-full w-full overflow-y-scroll scroll-area">
             <div className="pb-2">
-              {cart.map((i) => (
+              {cart?.length ? cart.map((i) => (
                 <CartItems
                   key={i?.ID}
                   shoes={i}
@@ -87,7 +87,7 @@ const ShoesPage = () => {
                     setLoading(true);
                   }}
                 />
-              ))}
+              )) : <><div className="">Your cart is empty.</div></>}
             </div>
           </ScrollArea>
         </CardWrapper>

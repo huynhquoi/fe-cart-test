@@ -32,7 +32,11 @@ const CardWrapper = ({
         <CardTitle className="text-2xl font-bold my-4 relative">
           <div className="flex items-center justify-between">
             <div className="">{title}</div>
-            {!!total && <div className="">${total}</div>}
+            {!!total ? (
+              <div className="">${total}</div>
+            ) : (
+              <div className="">$00.00</div>
+            )}
           </div>
         </CardTitle>
         <CardContent
