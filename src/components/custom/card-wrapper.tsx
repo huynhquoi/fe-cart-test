@@ -34,9 +34,9 @@ const CardWrapper = ({
             <div className="">{title}</div>
             {!!total ? (
               <div className="">${total}</div>
-            ) : (
+            ) : title === "Your Cart" ? (
               <div className="">$00.00</div>
-            )}
+            ) : null}
           </div>
         </CardTitle>
         <CardContent
